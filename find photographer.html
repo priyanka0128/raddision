@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .y1{
+       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("https://t.wallpaperweb.org/wallpaper/nature/1920x1080/canadanaturecorner1920x1080wallpaper10144.jpg");
+  height: 600px; width:2109px;
+       
+  background-repeat: no-repeat;
+
+  display: flex;
+
+  /* background-image: linear-gradient(blur); */
+    }
+    #usr{
+      opacity: 0.7;
+      margin-top: 145%;
+      margin-left:-390% ;
+    }
+    #xxx{
+      opacity: 0.7;
+      margin-top: -31%;
+      margin-left:-280% ;
+    }
+    #bb{
+      margin-top: -1%;
+      margin-left:57% ;
+      background-color: coral;
+      color: white;
+      border-radius: none;
+       }
+    .a1{
+      padding-left: 20%;
+      padding-top: 10%;
+      color: whitesmoke;
+    }
+    .a2{
+      padding-left: 10%;
+      padding-top: 15%;
+      color: whitesmoke;
+    }
+    /* #defaultUnchecked{
+  margin-top: 10px;
+      margin-left:-390% ;
+      color: white;
+ } */
+ .container-fluid{
+   margin-left: 80px;
+   margin-right: 80px;
+ }
+/* .blurimage{
+  filter: blur(6px);
+
+} */
+
+.bg-text {
+
+  color: white;
+  font-weight: bold;
+
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  padding: 20px;
+  
+}
+
+ .card.active, .card:hover {
+      transform: scale(1.05, 1.1);
+      
+      }
+    .card-footer{
+      background-color: transparent;
+      padding-left: 110px;
+     
+    }
+    
+    a{
+      color: gray;
+    }
+    a:hover{
+      color: lightsalmon;
+    }
+
+  .aaaa{
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    text-align: center;
+    color: black;
+    transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+   color: black;
+  font-weight: bold;
+  border: 3px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+  .aaaa a{
+    color: white;
+  }
+  .aaaa a:hover{
+    color: lightgray;
+  }
+  .under{
+    text-decoration: underline;
+  
+    text-decoration-color: lightgray;
+  }
+  .backk{
+    background-color: lightgray;
+  }
+  .abc1{
+    color: black;
+    padding-top: 5%;
+    padding-left: 1px;
+  }
+  .abc2{
+    color: darkslategrey;
+    padding-left: 1px;
+    padding-top: 30px ;
+   
+  }
+  #abc3{
+    color: indianred;
+    
+  }
+  .abc4{
+    color: darkslategrey;
+    padding-left: 1px;
+    padding-top: 7px ;
+    
+  }
+  .alignright {
+  /* margin-left: 60%;
+  padding-top: -90%; */
+  color: darkslategrey;
+  
+}
+.abc8{
+  font-family: 'Times New Roman', Times, serif;
+}
+.coll{
+  columns: 200px 3;
+  font-family: 'Times New Roman', Times, serif;
+}
+.footer{
+  background-color: rgb(70, 71, 71);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.bottomf{
+  padding-left: 5%;
+  color: grey;
+}
+/* .anchar{
+ padding-left: 50px;
+} */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+ 
+</style>
+
+</head>
+
+<body>
+    <div class="topnav">
+      <a href="#"><img src="Images/facebook.png"></a>
+        <a href="#"><img src="Images/twitter.png" height="23px"></a>
+        <a href="#"><img class="a1" src="Images/google-plus.png" height="27px" width="30px"></a>
+        <div class="topnav-right">
+          <a href="find photographer.html">Find a Photographer</a>
+          <a href="wedding.html">Wedding</a>
+          <a href="printphoto.html">Print Photos</a>
+          <a href="prophotobooks.html">Pro-range PhotoBooks</a>
+ 
+        </div>
+        
+      </div>
+  
+   <div class="y1">
+     
+ 
+    <h1 class="a1">FIND A<b> PHOTOGRAPHER / VIDEOGRAPHER<b><h3 class="a3">for any occasion, anywhere in India</h3><button type="button" id="bb"class="btn">Search</button></h1>
+   
+   
+  <form>  
+ <label>
+   <div class="col-xs-7">
+<input list="browser" name="myBrowser" placeholder="➤Location" id="usr" class="form-control"> &nbsp; <span class="iconify" data-icon="fa-video-camera" data-inline="false"></span>
+<div class="col-xs-7">
+  <input list="browser1" name="myBrowser" placeholder="Search by Location" id="xxx" class="form-control"> 
+  
+</label>
+ <datalist id="browser">
+  <option value="Manage addresses..."></option>
+   <option value="THANE"></option>
+   <option value="MUMBAI"></option>
+   <option value="NASHIK"></option>
+   <option value="NEW DELHI"></option>
+   <option value="NAGPUR"></option>
+   <option value="CHENNAI"></option>
+   <option value="JAIPUR"></option>
+   <option value="RAJKOT"></option>
+   <option value="SURAT"></option>
+ </datalist>
+
+ <datalist id="browser1">
+  <option value="WEDDING"></option>
+   <option value="BABIES & KIDS"></option>
+   <option value="BIRTHDAY"></option>
+   <option value="FASHION & PORTFOLIO"></option>
+   <option value="COMMERCIAL"></option>
+   <option value="SPECIAL OCCASION"></option>
+   <option value="MATERNITY"></option>
+   <option value="CORPORATE EVENTS"></option>
+   <option value="TRAVEL"></option>
+   <option value="NATURE"></option>
+ </datalist>
+
+
+
+<!-- <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+  <label class="custom-control-label" for="defaultUnchecked">Default unchecked</label>
+</div> -->
+</div>
+</div>
+</div> 
+<br>
+<br>
+
+<div class="container-fluid">
+
+
+  <h4 class="under"><b>POPULAR</b> CATEGORIES</h4>
+  <br>
+  <div class="row">
+
+    
+      <div class="col-sm-2">
+        <div class="card" >
+      <div class="grid-container">    
+        <img src="Images/back3.jpg" height="50px" width="220px" class="blurimage">
+        <p class="bg-text"><b>WEDDING</b></p>
+       <img src="Images/wedding1.jpg" alt="" height="100px" width="108px">
+             <img src="Images/wedding2.jpg" alt=""height="100px" width="108px">
+             <img src="Images/wedding3.jpg" alt=""height="100px" width="108px">
+             <img src="Images/wedding.jpg" alt=""height="100px" width="108px">
+           <div class="card-footer"><a href="#">Know more</a></div> 
+    </div>
+  </div>
+  </div>
+
+  <div class="col-sm-2">
+    <div class="card" >
+  <div class="grid-container">
+    <img src="Images/back3.jpg" height="50px" width="220px" class="blurimage">
+   <p class="bg-text"><b>BABIES AND KIDS</b></p>
+  <img src="Images/baby.jpg" alt="" height="100px" width="108px">
+        <img src="Images/baby2.jpg" alt=""height="100px" width="108px">
+        <img src="Images/baby1.jpg" alt=""height="100px" width="108px">
+        <img src="Images/baby3.jpg" alt=""height="100px" width="108px">
+        <div class="card-footer"><a href="#">Know more</a></div> 
+
+</div>
+</div>
+</div>
+
+<div class="col-sm-2">
+  <div class="card" >
+   
+<div class="grid-container">
+  <img src="Images/back3.jpg" height="50px" width="220px" class="blurimage">
+   <p class="bg-text"><b>FASHION AND PORTFOLIO</b></p>
+  <img src="Images/fashion1.jpg" alt="" height="100px" width="108px">
+        <img src="Images/fashion2.jpg" alt=""height="100px" width="108px">
+        <img src="Images/fashion3.jpg" alt=""height="100px" width="108px">
+        <img src="Images/fashion4.jpg" alt=""height="100px" width="108px">
+        <div class="card-footer"><a href="#">Know more</a></div> 
+
+</div>
+</div>
+</div>
+
+<div class="col-sm-2">
+  <div class="card" >
+<div class="grid-container">
+  <img src="Images/back3.jpg" height="50px" width="220px" class="blurimage">
+   <p class="bg-text"><b>COMMERCIAL</b></p>
+  <img src="Images/commercial1.jpg" alt="" height="100px" width="108px">
+        <img src="Images/commercial2.jpg" alt=""height="100px" width="108px">
+        <img src="Images/commercial3.jpg" alt=""height="100px" width="108px">
+        <img src="" alt=""height="100px" width="108px">
+        <div class="card-footer"><a href="#">Know more</a></div> 
+
+</div>
+</div>
+</div>
+
+<div class="col-sm-2">
+  <div class="card" >
+<div class="grid-container">
+  <img src="Images/back3.jpg" height="50px" width="220px" class="blurimage">
+  <p class="bg-text"><b>NATURE</b></p>
+ <img src="Images/nature1.jpg" alt="" height="100px" width="108px">
+       <img src="Images/nature2.jpg" alt=""height="100px" width="108px">
+       <img src="Images/nature3.jpg" alt=""height="100px" width="108px">
+       <img src="Images/nature4.jpg" alt=""height="100px" width="108px">
+       <div class="card-footer"><a href="#">Know more</a></div> 
+
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<h4 class="under"><b>POPULAR</b> LOCATION</h4>
+<br>
+<br>
+
+<div class="row">
+<div class="col-sm-2">
+ 
+<!-- <div class="bg-image"><img src="Images/bangalore.jpg" alt="" height="50px" width="220px" class="fad"></div> -->
+<div class="aaaa"><a href="#">BANGALORE</a></div>
+
+</div>
+
+
+<div class="col-sm-2">
+ 
+  <!-- <div class="bg-image"><img src="Images/bangalore.jpg" alt="" height="50px" width="220px" class="fad"></div> -->
+  <div class="aaaa"><a href="#">CHENNAI</a></div>
+  
+  </div>
+
+
+  <div class="col-sm-2">
+ 
+    <!-- <div class="bg-image"><img src="Images/bangalore.jpg" alt="" height="50px" width="220px" class="fad"></div> -->
+    <div class="aaaa"><a href="#">DELHI</a></div>
+    
+    </div>
+
+    <div class="col-sm-2">
+ 
+      <!-- <div class="bg-image"><img src="Images/bangalore.jpg" alt="" height="50px" width="220px" class="fad"></div> -->
+      <div class="aaaa"><a href="#">KOLKATA</a></div>
+      
+      </div>
+
+      <div class="col-sm-2">
+ 
+        <!-- <div class="bg-image"><img src="Images/bangalore.jpg" alt="" height="50px" width="220px" class="fad"></div> -->
+        <div class="aaaa"><a class="tagg" href="">MUMBAI</a></div>
+        
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="backk">
+
+<div class="container-fluid">
+<h3 class="abc1"><b>ARE YOU A PHOTOGRAPHER?GET LISTED WITH US!</b></h3>
+<h4 class="abc2"> <i class="fa fa-check" id="abc3" aria-hidden="true"></i>&nbsp; Showcase your photos on your personal page</h4>
+<h4 class="abc4"> <i class="fa fa-check" id="abc3" aria-hidden="true"></i>&nbsp; Get contacted directly by customers</h4>
+<h4 class="abc4"> <i class="fa fa-check" id="abc3" aria-hidden="true"></i>&nbsp; Be a part of India's largest photographers directory</h4>
+<br>
+<br>
+<h5 class="alignright">Submit your contact details below & we will get in <br> touch with you.</h5>
+<button  class="btn btn-danger mb-2">GET LISTED TODAY!</button></div>
+<br>
+<br>
+</div>
+</div>
+<br>
+<br>
+<div class="container">
+<h5 class="under"><b>ALL CATEGORIES</b></h5>
+<div class="abc8">
+  
+  
+  <a href="#">Wedding</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Babies & Kids</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Fashion & Portfolio</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Commerical</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Special Occasion</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Corporate Events</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Travel</a>
+</div>
+<br>
+<br>
+
+<h5 class="under"><b>EXPLORE PHOTOGRAPHERS IN TOP CITIES</b></h5>
+<div class="coll">
+ <div class="row">
+   <div class="col-sm-11">
+     <br>
+  <h6 class="under"><b>Wedding</b></h6>
+  <a href="#">Wedding Photographers in Delhi</a><br>
+  <a href="#">Wedding Photographers in Mumbai</a><br>
+  <a href="#">Wedding Photographers in Chennai</a><br>
+  <a href="#">Wedding Photographers in Kolkata</a><br>
+  <a href="#">Wedding Photographers in Bangalore</a><br>
+
+ </div>
+ <br>
+ <div class="col-sm-11">
+   <br>
+   
+  <h6 class="under"><b>Babies & Kids</b></h6>
+  <a href="#">Babies & Kids Photographers in Delhi</a><br>
+  <a href="#">Babies & Kids Photographers in Mumbai</a><br>
+  <a href="#">Babies & Kids Photographers in Chennai</a><br>
+  <a href="#">Babies & Kids Photographers in Kolkata</a><br>
+  <a href="#">Babies & Kids Photographers in Bangalore</a><br>
+ </div>
+
+ <div class="col-sm-11">
+   <br>
+  <h6 class="under"><b>Commerical</b></h6>
+  <a href="#">Commerical Photographers in Delhi</a><br>
+  <a href="#">Commerical Photographers in Mumbai</a><br>
+  <a href="#">Commerical Photographers in Chennai</a><br>
+  <a href="#">Commerical Photographers in Kolkata</a><br>
+  <a href="#">Commerical Photographers in Bangalore</a><br>
+</div>
+</div>
+
+<div class="row">
+  <br>
+  <div class="col-sm-11">
+    <br>
+ <h6 class="under"><b>Fashion & Portfolio</b></h6>
+ <a href="#">Wedding Photographers in Delhi</a><br>
+ <a href="#">Wedding Photographers in Mumbai</a><br>
+ <a href="#">Wedding Photographers in Chennai</a><br>
+ <a href="#">Wedding Photographers in Kolkata</a><br>
+ <a href="#">Wedding Photographers in Bangalore</a><br>
+
+</div>
+
+<div class="col-sm-11">
+  <br>
+ <h6 class="under"><b>Nature</b></h6>
+ <a href="#">Nature Photographers in Delhi</a><br>
+ <a href="#">Nature Photographers in Mumbai</a><br>
+ <a href="#">Nature Photographers in Chennai</a><br>
+ <a href="#">Nature Photographers in Kolkata</a><br>
+ <a href="#">Nature Photographers in Bangalore</a><br>
+</div>
+<br>
+<div class="col-sm-11">
+  <br>
+ <h6 class="under"><b>Candid Wedding</b></h6>
+ <a href="#">Candid Wedding Photographers in Delhi</a><br>
+ <a href="#">Candid Wedding Photographers in Mumbai</a><br>
+ <a href="#">Candid Wedding Photographers in Chennai</a><br>
+ <a href="#">Candid Wedding Photographers in Kolkata</a><br>
+ <a href="#">Candid Wedding Photographers in Bangalore</a><br>
+</div>
+</div>
+</div>
+
+</div>
+<br>
+<div class="footer">
+
+  <br>
+<p class="bottomf">radission@photography.com
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="anchar" href="#">ABOUT</a>&nbsp;&nbsp; | &nbsp;&nbsp; <a href="#" class="anchar">ABOUT RADISSION</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+<a class="anchar"href="#">CONTACT US</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" class="anchar">TERMS & CONDITIONS</a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <a>FOLLOW US ON &nbsp; <i class="fa fa-instagram" style="font-size:24px"></i> &nbsp;&nbsp;<i class="fa fa-facebook-official" style="font-size:24px"></i> &nbsp;&nbsp;<i class="fa fa-google-plus-official" style="font-size:24px"></i> &nbsp;&nbsp;<i class="fa fa-linkedin-square" style="font-size:24px"></i> &nbsp;&nbsp;<i class="fa fa-twitter-square" style="font-size:24px"></i> &nbsp;&nbsp; 
+<i class="fa fa-youtube" style="font-size:24px"></i>
+
+</a>
+
+
+
+
+
+
+
+
+<br>
+<br>
+</p>
+</div>
+</form>     
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+  
+</body>
+</html>
+
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+
+          </div>
+        </div>
+      </div> -->

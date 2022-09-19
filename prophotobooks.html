@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" int
+egrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<title>Pro-Photo books</title>
+<style>
+.product{
+  background-color: white;
+}
+.container{
+    background-color:white;
+}
+h1{
+    text-align: center;
+    font-family:serif;
+}
+.center{
+   margin-left: auto;
+   margin-right: auto;
+}
+.space{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+.main {
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+h4{
+    text-align: center;
+}
+.myBtnContainer{
+  text-align: center;
+}
+.row {
+  margin: 10px -16px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 30.33%;
+  display: none;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: rgb(255, 255, 255);
+  padding: 2px;
+}
+.c{
+  background-color: #e6f2ff;
+  padding: 40px;
+}
+.show {
+  display: block;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: rgb(68, 124, 170);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(203, 214, 236);
+}
+
+.btn.active {
+  background-color: rgb(68, 124, 170); 
+  color:white;
+}
+hr{
+  border-top: 1px solid darkgray;
+}
+.book{
+  margin-left: 50px;
+  text-align: center;
+}
+.print{
+  background-color: #e6f2ff;
+  padding: 40px;
+}
+.print h2{
+ color: #000;
+ font-size: 50px;
+}
+.print h5{
+  color: rgb(59, 54, 54);
+  font-size: 40px;
+}
+.print ul{
+  font-size: 25px;
+  color: #bfbfbf;
+}
+.photo{
+  margin-right: 40px ;
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+.photo h2{
+ color: #000;
+ font-size: 50px;
+}
+.photo h5{
+  color: rgb(59, 54, 54);
+  font-size: 40px;
+  margin-left: 20px;
+}
+.photo ul{
+  font-size: 25px;
+  color: #bfbfbf;
+}
+.us{
+  background-color: #0f4c75;
+  color: #eeecda;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+}
+.us p{
+  color:#b1b493;
+  font-size:large;
+}
+.us h4{
+  color: #eeecda;
+  text-align: left;
+}
+.us table th{
+  padding-right: 200px;
+}
+.color table th{
+  padding-right: 40px;
+}
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="#"><img src="Images/facebook.png"></a>
+        <a href="#"><img src="Images/twitter.png" height="23px"></a>
+        <a href="#"><img class="a1" src="Images/google-plus.png" height="27px" width="30px"></a>
+        <div class="topnav-right">
+          <a href="find photographer.html">Find a Photographer</a>
+          <a href="wedding.html">Wedding</a>
+          <a href="printphoto.html">Print Photos</a>
+          <a href="prophotobooks.html">Pro-range PhotoBooks</a>
+ 
+        </div>
+        
+      </div>
+  <div class="product">
+    <div class="container">
+    <h1>What makes a Radission Photobook ?</h1>
+    <br>
+    <table class="center">
+        <tr class="space">
+            <th><img src="images/photobook/makes-box.png" width="150px" style="padding-right: 10px;"></th>
+            <th><img src="images/photobook/well.png"width="450px"style="padding-right: 10px;"></th>
+            <th><img src="images/photobook/bag.png" width="120px"style="padding-right: 10px;"></th>
+        </tr>
+        <tr class="space">
+            <th style="text-align: center;">PHOTOBOOK BOX</th>
+            <th style="text-align: center;">WELL DESIGNED PHOTOBOOK</th>
+            <th style="text-align: center;">BAG</th>
+        </tr>
+    </table>
+</div>
+<!-- <hr> -->
+<div class="c">
+<h1>Photobook Covers</h1>
+<br>
+<br>
+<div class="myBtnContainer">
+     <button class="btn" onclick="filterSelection('sh')" > SH PRO</button> 
+  <button class="btn" onclick="filterSelection('indi')">INDI PRO</button>
+  <button class="btn" onclick="filterSelection('super')">SUPER BOOK</button>
+</div>
+<div class="row">
+    <div class="column sh">
+      <div class="content">
+        <img src="images/photobook/luxury.png" alt="luxury" style="width:100%">
+        <h4>Luxury</h4>
+      </div>
+    </div>
+    <div class="column super">
+        <div class="content">
+        <img src="images/photobook/regular.png" alt="regular" style="width:100%">
+          <h4>Regular</h4>
+        </div>
+      </div>
+      <div class="column sh">
+        <div class="content">
+        <img src="images/photobook/solitaire.png" alt="regular" style="width:100%">
+          <h4>Solitaire</h4>
+        </div>
+      </div><div class="column super">
+        <div class="content">
+        <img src="images/photobook/superbook-luxury.png" alt="regular" style="width:100%">
+          <h4>Luxury</h4>
+        </div>
+      </div>
+      <div class="column indi">
+        <div class="content">
+        <img src="images/photobook/premium-eco-leather.png" alt="regular" style="width:100%">
+          <h4>Eco-Leather</h4>
+        </div>
+      </div>
+      <div class="column sh">
+        <div class="content">
+        <img src="images/photobook/infiniti.png" alt="regular" style="width:100%">
+          <h4>Infiniti</h4>
+        </div>
+      </div>
+      <div class="column indi">
+        <div class="content">
+        <img src="images/photobook/metallic-gala.png" alt="regular" style="width:100%">
+          <h4>Metallic Gala</h4>
+        </div>
+      </div>
+      <div class="column indi">
+        <div class="content">
+        <img src="images/photobook/premium-hard.png" alt="regular" style="width:100%">
+          <h4>HARD</h4>
+        </div>
+      </div>
+</div>
+</div>
+<!-- <hr> -->
+<div class="color">
+  <h1>Cover Colours</h1>
+  <table class="book">
+    <tr>
+      <th><img src="images/photobook/book.png" width="450px"></th>
+      <th>
+        <p style="color: gray;">This book comes with a eco-friendly leather cover along with a matching leather case.</p>
+      <img src="images/photobook/brown.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/grey.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/red.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/blue.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/dark.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/dark2.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <br>
+      <img src="images/photobook/pink.jpg" width="80px" style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/silver.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/pur.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+      <img src="images/photobook/b2.jpg" width="80px"style="padding-top: 10px;padding-right:5px;">
+
+    </th>
+    </tr>
+  </table>
+</div>
+<!-- <hr> -->
+<div class="print">
+  <table>
+    <tr>
+      <th>
+        <h2>Radisson Print Advantages</h2>
+        <br>
+        <h5>How our philosophy translates into that perfect print.</h5>
+        <br>
+        <ul>
+          <li>Intelligent Colour Management System </li>
+          <li>Colour Preferences Memorieser</li>
+          <li>Automated Print Managment System</li>
+          <li>Radisson Quality Assurance</li>
+        </ul>
+      </th>
+      <th>
+        <img src="images/photobook/p.jpg" width="800px" height="500px"> 
+      </th>
+    </tr>
+  </table>
+</div>
+<!-- <hr> -->
+<div class="photo">
+  <h2>Radisson Compose - Photobook Design Tool</h2>
+  <table>
+    <tr>
+      <th>
+        <img src="images/photobook/p2.jpg" width="800px" height="500px"> 
+      </th>
+      <th>
+        <h5>Free tool to help you design and order your photobook with ease</h5>
+        <br>
+        <ul>
+          <li>View all photobook variants and prices.</li>
+          <li>Number of themes to choose from.</li>
+          <li>Upload images directly.</li>
+          <li>Place order and make payment.</li>
+        </ul>
+        <img src="images/photobook/ic.png" width="300px">
+        
+      </th>
+    </tr>
+  </table>
+</div>
+<div class="us">
+  <h2>Contact Us</h2>
+  <table>
+    <tr>
+      <th>
+        <h4>radission@photography.com<br>
+          +91 9767806413<br>
+          Whatsapp : +91 8769045221<br>
+          Address : Shop No.2,<br> Hiranandani, Powai(400076) 
+        </h4>
+      </th>
+      <th>
+        <h4>Downloads About Us Our Team Careers<br>
+           Terms of Service Design Services - T & C<br>Delivery Time Return Policy<br> View Photobook Using Pin Let us Co-Browse</h4>
+      </th>
+      <th>
+        <img src="images/photobook/s1.png">&nbsp;&nbsp;&nbsp;
+        <img src="images/photobook/s2.png">&nbsp;&nbsp;&nbsp;
+        <img src="images/photobook/s3.png">&nbsp;&nbsp;&nbsp;
+        <img src="images/photobook/s5.png">&nbsp;&nbsp;&nbsp;
+        <img src="images/photobook/s6.png">
+
+      </th>
+    </tr>
+  </table>
+  <br>
+  <p>Wedding Photographers- Delhi, Mumbai, Chennai, Kolkata,       Hyderabad,Bangalore<br>
+    Top Wedding Photographers- India, Bangalore, Mumbai, Chennai, Delhi, Kolkata<br>
+    Photo Inspirations- Quirky Couples, Dream date alert, Tears of joy, Brides who rock, New arrivals, Brides in White, She said yes!</p>
+</div>
+</div>
+<script>
+  filterSelection("sh")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+} 
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
